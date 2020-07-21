@@ -1,0 +1,6 @@
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\bin\Debug\DAL.dll
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\bin\Debug\DAL.pdb
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\obj\Debug\DAL.dll
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\DAL\obj\Debug\DAL.pdb
