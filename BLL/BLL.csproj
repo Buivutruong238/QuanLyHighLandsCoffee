@@ -49,7 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppRepository.cs" />
+    <Compile Include="NguyenLieuCan_BLL.cs" />
     <Compile Include="NguyenLieu_BLL.cs" />
+    <Compile Include="NhaCungCap_BLL.cs" />
     <Compile Include="NhanVien_BLL.cs" />
     <Compile Include="OverlayFormShow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

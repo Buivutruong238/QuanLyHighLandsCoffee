@@ -17,8 +17,10 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Frm_DangNhap());
-            Application.Run(new Frm_BanHang());
+            Application.Run(new Frm_DangNhap());
+            //Application.Run(new Frm_NhapNguyenLieu());
+            //Application.Run(new Frm_NhaCungCap());
+            //Application.Run(new Frm_NguyenLieuCan());
         }
     }
 }
