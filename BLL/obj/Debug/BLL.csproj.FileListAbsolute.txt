@@ -1,9 +1,7 @@
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\BLL.dll.config
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\BLL.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\BLL.pdb
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.csproj.CopyComplete
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.dll
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.pdb
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DAL.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.XtraEditors.v20.1.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Utils.v20.1.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Data.v20.1.dll
@@ -12,6 +10,7 @@ D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Printing.v20.1.Core.d
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DAL.pdb
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.XtraEditors.v20.1.xml
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Utils.v20.1.xml
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DevExpress.Data.v20.1.xml
@@ -44,7 +43,8 @@ D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\de\DevExpress.Pdf.v20.1.Core.res
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\BLL.dll.config
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DAL.dll
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\bin\Debug\DAL.pdb
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.dll
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\BLL\obj\Debug\BLL.pdb

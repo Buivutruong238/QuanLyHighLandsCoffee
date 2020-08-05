@@ -15,14 +15,14 @@ namespace BLL
         {
             //db = new QLyCafeDataContext();
         }
-        public List<DAL_ChiTietHD> GetChiTietHoaDons_Theo_maBan_TT0(int mb)
+        public List<DAL_ChiTietHoaDon> GetChiTietHoaDons_Theo_maBan_TT0(int mb)
         {
 
             var result = (from hd in db.HoaDons
                           join cthd in db.ChiTietHoaDons on hd.MaHoaDon equals cthd.MaHoaDon
                           join m in db.Mons on cthd.MaMon equals m.MaMon
                           where (hd.MaSoBan == mb && hd.TrangThai == 0)
-                          select new DAL_ChiTietHD
+                          select new DAL_ChiTietHoaDon
                           {
                               TenMon = m.TenMon.ToString(),
                               GiaBan = Convert.ToDouble(m.GiaBan),
@@ -33,7 +33,7 @@ namespace BLL
         }
         public bool is_TonTaiMonTrongHD(int maHD, int maMon)
         {
-            _ChiTietHoaDon_DAL cthd = db.ChiTietHoaDons.FirstOrDefault(t => t.MaHoaDon == maHD && t.MaMon == maMon);
+            ChiTietHoaDon cthd = db.ChiTietHoaDons.FirstOrDefault(t => t.MaHoaDon == maHD && t.MaMon == maMon);
             if(cthd != null)
             {
                 return true;
@@ -42,12 +42,12 @@ namespace BLL
         }
         public void ThemChiTietHoaDon(int idHoaDon, int idMon, int soLuong)
         {
-            db.ChiTietHoaDons.InsertOnSubmit(new _ChiTietHoaDon_DAL { MaHoaDon = idHoaDon, MaMon = idMon, SoLuong = soLuong });
+            db.ChiTietHoaDons.InsertOnSubmit(new ChiTietHoaDon { MaHoaDon = idHoaDon, MaMon = idMon, SoLuong = soLuong });
             db.SubmitChanges();
         }
         public void UpdateSoLuongMon_TonTai(int idHoaDon, int idMon, int soLuong)
         {
-            _ChiTietHoaDon_DAL cthd = db.ChiTietHoaDons.FirstOrDefault(t => t.MaHoaDon == idHoaDon && t.MaMon == idMon);
+            ChiTietHoaDon cthd = db.ChiTietHoaDons.FirstOrDefault(t => t.MaHoaDon == idHoaDon && t.MaMon == idMon);
             if(cthd != null)
             {
                 cthd.SoLuong += soLuong;

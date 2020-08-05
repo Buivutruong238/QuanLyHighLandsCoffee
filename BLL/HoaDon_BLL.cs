@@ -23,7 +23,7 @@ namespace BLL
             db.HoaDons.InsertOnSubmit(hd);
             db.SubmitChanges();
 
-            _ChiTietHoaDon_DAL cthd = new _ChiTietHoaDon_DAL();
+            ChiTietHoaDon cthd = new ChiTietHoaDon();
             cthd.MaHoaDon = hd.MaHoaDon;
             cthd.MaMon = mamon;
             cthd.SoLuong = soluong;

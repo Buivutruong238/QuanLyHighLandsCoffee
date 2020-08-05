@@ -192,10 +192,10 @@ namespace GUI
         private void load_TTHoaDon_Theo_maBan(int maban)
         {
             listView_CT_HoaDon.Items.Clear();
-            List<DAL_ChiTietHD> list = app.ChiTietHoaDon_BLL.GetChiTietHoaDons_Theo_maBan_TT0(maban);
+            List<DAL_ChiTietHoaDon> list = app.ChiTietHoaDon_BLL.GetChiTietHoaDons_Theo_maBan_TT0(maban);
             if(list != null)
             {
-                foreach (DAL_ChiTietHD cthd in list)
+                foreach (DAL_ChiTietHoaDon cthd in list)
                 {
                     ListViewItem lstvItem = new ListViewItem(cthd.TenMon.ToString());
                     lstvItem.SubItems.Add(cthd.SoLuong.ToString());

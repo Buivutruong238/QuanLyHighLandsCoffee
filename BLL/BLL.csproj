@@ -51,7 +51,9 @@
     <Compile Include="HoaDon_BLL.cs" />
     <Compile Include="LoaiMon_BLL.cs" />
     <Compile Include="Mon_BLL.cs" />
+    <Compile Include="NguyenLieuCan_BLL.cs" />
     <Compile Include="NguyenLieu_BLL.cs" />
+    <Compile Include="NhaCungCap_BLL.cs" />
     <Compile Include="NhanVien_BLL.cs" />
     <Compile Include="OverlayFormShow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{918b271d-76f7-4f20-8361-28eee1e8e7ba}</Project>
+      <Project>{1F99BF49-F765-47C2-9359-8AE1C36AB898}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
