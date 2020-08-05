@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DAL">
-      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppRepository.cs" />
+    <Compile Include="Ban_BLL.cs" />
+    <Compile Include="ChiTietHoaDon_BLL.cs" />
+    <Compile Include="HoaDon_BLL.cs" />
+    <Compile Include="LoaiMon_BLL.cs" />
+    <Compile Include="Mon_BLL.cs" />
     <Compile Include="NguyenLieu_BLL.cs" />
     <Compile Include="NhanVien_BLL.cs" />
     <Compile Include="OverlayFormShow.cs" />
@@ -83,6 +85,12 @@
     <None Include="QLyCafe.dbml.layout">
       <DependentUpon>QLyCafe.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{918b271d-76f7-4f20-8361-28eee1e8e7ba}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

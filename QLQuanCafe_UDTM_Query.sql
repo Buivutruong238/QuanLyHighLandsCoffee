@@ -210,6 +210,7 @@ BEGIN
 	SET @i = @i + 1
 END
 GO
+INSERT INTO Ban(TenBan) VALUES (N'Mang về')
 --
 select * from LoaiMon
 select * from Mon
@@ -217,3 +218,86 @@ select * from Ban
 --------------------------------------------------------------17-7
 select * from nhanvien
 INSERT INTO NhanVien(TenDangNhap,HoTen,MatKhau,HoatDong,DiaChi,SoDienThoai) VALUES('truong',N'Bùi Vũ Trường','123',1,N'Quảng Ngãi','0345689285')
+--------------------------------------------------------------27-7
+ALTER TABLE Mon
+ADD HinhAnh NVARCHAR(128)
+
+UPDATE Mon SET HinhAnh = 'phin-sua-da.png' WHERE MaMon = '1'
+UPDATE Mon SET HinhAnh = 'phin-den-da.png' WHERE MaMon = '2'
+UPDATE Mon SET HinhAnh = 'phin-den-nong.png' WHERE MaMon = '3'
+UPDATE Mon SET HinhAnh = 'phin-sua-nong.png' WHERE MaMon = '4'
+UPDATE Mon SET HinhAnh = 'mocha-macchiato.png' WHERE MaMon = '5'
+UPDATE Mon SET HinhAnh = 'espresso.png' WHERE MaMon = '6'
+UPDATE Mon SET HinhAnh = 'americano.png' WHERE MaMon = '7'
+UPDATE Mon SET HinhAnh = 'latte.png' WHERE MaMon = '8'
+UPDATE Mon SET HinhAnh = 'caramel-phin-freeze.png' WHERE MaMon = '9'
+UPDATE Mon SET HinhAnh = 'classic-phin-freeze.png' WHERE MaMon = '10'
+UPDATE Mon SET HinhAnh = 'freeze-tra-xanh.png' WHERE MaMon = '11'
+UPDATE Mon SET HinhAnh = 'cookies-cream.png' WHERE MaMon = '12'
+UPDATE Mon SET HinhAnh = 'freeze-socola.png' WHERE MaMon = '13'
+UPDATE Mon SET HinhAnh = 'tra-sen-vang.png' WHERE MaMon = '14'
+UPDATE Mon SET HinhAnh = 'tra-thach-vai.png' WHERE MaMon = '15'
+UPDATE Mon SET HinhAnh = 'tra-thach-dao.png' WHERE MaMon = '16'
+UPDATE Mon SET HinhAnh = 'tra-thanh-dao.png' WHERE MaMon = '17'
+UPDATE Mon SET HinhAnh = 'thit-nuong.png' WHERE MaMon = '18'
+UPDATE Mon SET HinhAnh = 'xiu-mai.png' WHERE MaMon = '19'
+UPDATE Mon SET HinhAnh = 'ga-xe-nuoc-tuong.png' WHERE MaMon = '20'
+UPDATE Mon SET HinhAnh = 'cha-lua-xa-xiu.png' WHERE MaMon = '21'
+UPDATE Mon SET HinhAnh = 'banh-mousse-cacao.png' WHERE MaMon = '22'
+UPDATE Mon SET HinhAnh = 'banh-socola-highlands.png' WHERE MaMon = '23'
+UPDATE Mon SET HinhAnh = 'banh-caramel-pho-mai.png' WHERE MaMon = '24'
+UPDATE Mon SET HinhAnh = 'banh-mousse-dao.png' WHERE MaMon = '25'
+
+select * from NhanVien
+
+select * from Ban
+select * from HoaDon
+select * from ChiTietHoaDon
+
+select f.TenMon, cthd.SoLuong, f.GiaBan 
+from Mon as f, HoaDon as hd, ChiTietHoaDon as cthd 
+where hd.MaHoaDon = cthd.MaHoaDon 
+		and cthd.MaMon = f.MaMon 
+		and hd.MaSoBan = 1                       --1.maban 
+		and hd.TrangThai = 0
+
+
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000001', N'Cà Phê', N'Kilogram', 500000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000002', N'Đường', N'Kilogram', 12000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000003', N'Sữa', N'Hộp', 22000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000004', N' Thịt heo', N'Kilogram', 55000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000005', N'Thịt gà', N'Kilogram', 18000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000006', N'Túi trà đào', N'Hộp', 33000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000007', N'Túi trà xanh', N'Hộp', 33000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000008', N'Túi trà vải', N'Hộp', 30000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000009', N'Túi trà sen', N'Hộp', 35000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000010', N'Bột sữa ', N'Kilogram', 25000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000011', N'Socola', N'Kilogram', 80000.0000)
+INSERT [dbo].[NguyenLieuNhap] ([MaNguyenLieu], [TenNguyenLieu], [DonViTinh], [DonGia]) VALUES (N'NL000012', N'Bột làm bánh', N'Kilogram', 12000.0000)
+
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00001', N'90s Coffee', N'8C, Đường số 2, P. Trường Thọ, Q.Thủ Đức', N'0929899992')
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00002', N'Taf Coffee', N'133C Nguyễn Chí Thanh, P. 9, Q. 5', N'0988221133')
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00003', N'Cafe Motherland', N'160 Vườn Lài, P. Phú Thọ Hòa, Q. Tân Phú', N'0355667788')
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00004', N'Vifoodshop', N'23 Lê Đức Thọ, P. Phú Thọ, Q. Gò Vấp', N'0375025415')
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00005', N'Bách Hóa Xanh', N'722 Lê Trọng Tấn, P. Tây Thạnh, Q. Tân Phú', N'0325416658')
+INSERT [dbo].[NhaCungCap] ([MaNhaCungCap], [TenNhaCungCap], [DiaChi], [SoDienThoai]) VALUES (N'NCC00006', N'Trà Búp Dũng Đạt', N'5/7 Huỳnh Thị Hai, P. Tân Chánh Hiệp, Q.12', N'0959916039')
+
+INSERT [dbo].[PhieuNhap] ([MaPhieuNhap], [MaNhaCungCap], [NgayNhap], [ThanhTien], [NguoiLap]) VALUES (N'PN000001', N'NCC00002', CAST(0x0000AC0E012E99A5 AS DateTime), 1500000.0000, N'truong')
+INSERT [dbo].[PhieuNhap] ([MaPhieuNhap], [MaNhaCungCap], [NgayNhap], [ThanhTien], [NguoiLap]) VALUES (N'PN000002', N'NCC00002', CAST(0x0000AC0E012EFBC0 AS DateTime), 890000.0000, N'truong')
+INSERT [dbo].[PhieuNhap] ([MaPhieuNhap], [MaNhaCungCap], [NgayNhap], [ThanhTien], [NguoiLap]) VALUES (N'PN000003', N'NCC00006', CAST(0x0000AC0E012F7DC2 AS DateTime), 960000.0000, N'truong')
+INSERT [dbo].[PhieuNhap] ([MaPhieuNhap], [MaNhaCungCap], [NgayNhap], [ThanhTien], [NguoiLap]) VALUES (N'PN000004', N'NCC00001', CAST(0x0000AC0E01318506 AS DateTime), 1000000.0000, N'truong')
+INSERT [dbo].[PhieuNhap] ([MaPhieuNhap], [MaNhaCungCap], [NgayNhap], [ThanhTien], [NguoiLap]) VALUES (N'PN000005', N'NCC00001', CAST(0x0000AC0E0131E8CC AS DateTime), 146000.0000, N'truong')
+
+SET IDENTITY_INSERT [dbo].[Ban] OFF
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000001', N'NL000001', 500000.0000, 3, 1500000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000002', N'NL000002', 12000.0000, 10, 120000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000002', N'NL000003', 22000.0000, 10, 220000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000002', N'NL000004', 55000.0000, 10, 550000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000003', N'NL000006', 33000.0000, 10, 330000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000003', N'NL000007', 33000.0000, 10, 330000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000003', N'NL000008', 30000.0000, 10, 300000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000004', N'NL000001', 500000.0000, 2, 1000000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000005', N'NL000004', 55000.0000, 2, 110000.0000)
+INSERT [dbo].[ChiTietPhieuNhap] ([MaPhieuNhap], [MaNguyenLieu], [DonGia], [SoLuong], [ThanhTien]) VALUES (N'PN000005', N'NL000005', 18000.0000, 2, 36000.0000)
+SET IDENTITY_INSERT [dbo].[LoaiMon] ON 
+

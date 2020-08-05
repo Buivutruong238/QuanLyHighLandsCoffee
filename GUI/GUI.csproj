@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BLL">
-      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.BonusSkins.v20.1" />
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.Data.v20.1" />
@@ -56,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ban_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ban_UserControl.Designer.cs">
+      <DependentUpon>Ban_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,8 +77,17 @@
     <Compile Include="Frm_NhapNguyenLieu.Designer.cs">
       <DependentUpon>Frm_NhapNguyenLieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mon_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mon_UserControl.Designer.cs">
+      <DependentUpon>Mon_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ban_UserControl.resx">
+      <DependentUpon>Ban_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BanHang.resx">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_NhapNguyenLieu.resx">
       <DependentUpon>Frm_NhapNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mon_UserControl.resx">
+      <DependentUpon>Mon_UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -94,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -105,6 +121,54 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\americano.png" />
+    <None Include="Resources\ban.png" />
+    <Content Include="Resources\banh-caramel-pho-mai.jpg" />
+    <Content Include="Resources\banh-chuoi.jpg" />
+    <Content Include="Resources\banh-mousse-cacao.png" />
+    <Content Include="Resources\banh-mousse-dao.png" />
+    <Content Include="Resources\banh-pho-mai-ca-phe.jpg" />
+    <Content Include="Resources\banh-pho-mai-chanh-day.jpg" />
+    <Content Include="Resources\banh-pho-mai-tra-xanh.jpg" />
+    <Content Include="Resources\banh-socola-highlands.png" />
+    <Content Include="Resources\banh-tiramisu.jpg" />
+    <Content Include="Resources\caramel-phin-freeze.png" />
+    <Content Include="Resources\cha-lua-xa-xiu.png" />
+    <Content Include="Resources\classic-phin-freeze.png" />
+    <Content Include="Resources\cookies-cream.png" />
+    <Content Include="Resources\espresso.png" />
+    <Content Include="Resources\freeze-socola.png" />
+    <Content Include="Resources\freeze-tra-xanh.png" />
+    <Content Include="Resources\ga-xe-nuoc-tuong.png" />
+    <Content Include="Resources\latte.png" />
+    <Content Include="Resources\ly-su-mosaic.png" />
+    <Content Include="Resources\mericano.png" />
+    <Content Include="Resources\mocha-macchiato.png" />
+    <Content Include="Resources\phin-den-da.png" />
+    <Content Include="Resources\phin-den-nong.png" />
+    <Content Include="Resources\phin-inox.png" />
+    <Content Include="Resources\phin-sua-da.png" />
+    <Content Include="Resources\phin-sua-nong.png" />
+    <Content Include="Resources\thit-nuong.png" />
+    <Content Include="Resources\tra-sen-vang.png" />
+    <Content Include="Resources\tra-thach-dao.png" />
+    <Content Include="Resources\tra-thach-vai.png" />
+    <Content Include="Resources\tra-thanh-dao.png" />
+    <Content Include="Resources\truyen-thong-1kg.png" />
+    <Content Include="Resources\truyen-thong-200gr.png" />
+    <Content Include="Resources\xiu-mai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{3fc57ecc-ec6b-4332-bbeb-6e9301ef1505}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{918B271D-76F7-4F20-8361-28EEE1E8E7BA}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

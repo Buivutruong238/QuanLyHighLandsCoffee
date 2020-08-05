@@ -14,11 +14,19 @@ namespace GUI
 {
     public partial class Frm_DangNhap : DevExpress.XtraEditors.XtraForm
     {
-        private AppRepository app = new AppRepository();
+        private AppRepository app;
+        private Frm_BanHang frm_main;
         public Frm_DangNhap()
         {
             InitializeComponent();
             setup();
+        }
+        private void setup()
+        {
+            app = new AppRepository();
+            frm_main = new Frm_BanHang();
+            frm_main.Show();
+            OverlayFormShow.Instance.ShowFormOverlay(frm_main);
         }
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
@@ -30,8 +38,14 @@ namespace GUI
             }
             else if (nv.MatKhau.Equals(txt_MatKhau.Text.Trim()))
             {
+                frm_main.login_account = nv;
+                Control[] ctrl = frm_main.Controls.Find("groupControl_HoaDon", true);
+                if(ctrl.Count() > 0)
+                {
+                    ctrl[0].Text += frm_main.login_account.HoTen;
+                }
+
                 OverlayFormShow.Instance.CloseProgressPanel();
-                //this.Visible = false;
                 this.Hide();
             }
             else
@@ -62,11 +76,6 @@ namespace GUI
         }
 
 
-        private void setup()
-        {
-            Frm_BanHang frm_main = new Frm_BanHang();
-            frm_main.Show();
-            OverlayFormShow.Instance.ShowFormOverlay(frm_main);
-        }
+       
     }
 }

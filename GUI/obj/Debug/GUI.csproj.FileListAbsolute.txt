@@ -57,8 +57,12 @@ D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.exe
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.pdb
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\BLL.dll
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\BLL.pdb
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.Frm_BanHang.resources
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.Frm_DangNhap.resources
-D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\BLL.dll.config
 D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.Frm_NhapNguyenLieu.resources
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.Mon_UserControl.resources
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\obj\Debug\GUI.Ban_UserControl.resources
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\DAL.dll
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\DAL.pdb
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\BLL.pdb
+D:\[DoanUDTM]\QuanLyQuanCafe_UDTM\GUI\bin\Debug\BLL.dll.config
